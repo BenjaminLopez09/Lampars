@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Libre Caslon Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background: linear-gradient(135deg, #3d2b1f, #765538);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.header-contenido h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.header-contenido p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #2b211b;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e5b85c;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #3d2b1f;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.texto-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.presentacion {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 900px;
+
+    background: linear-gradient(
+        120deg,
+        #f8f4ec,
+        #ead8bd
+    );
+}
+
+.presentacion-texto {
+    flex: 1;
+}
+
+.presentacion-texto h2 {
+    text-align: left;
+    font-size: 2.7rem;
+}
+
+.presentacion-texto p {
+    margin: 20px 0 30px;
+    max-width: 550px;
+}
+
+.presentacion-imagen {
+    flex: 1;
+}
+
+.presentacion-imagen img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: #c7923e;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #a87329;
+}
+
+.productos {
+    background-color: #ffffff;
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto-card {
+    background-color: #f8f4ec;
+
+    width: 260px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 20px;
+}
+
+.producto-info h3 {
+    color: #3d2b1f;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: block;
+
+    color: #a87329;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.producto-info button {
+    width: 100%;
+
+    border: none;
+
+    background-color: #3d2b1f;
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.producto-info button:hover {
+    background-color: #765538;
+}
+
+.reseñas {
+    background-color: #ead8bd;
+}
+
+.reseñas-contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.reseña {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reseña h3 {
+    margin-bottom: 15px;
+}
+
+.reseña p {
+    margin-bottom: 15px;
+}
+
+.contacto {
+    background-color: #ffffff;
+}
+
+.contacto-contenido {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+
+    gap: 60px;
+
+    align-items: flex-start;
+}
+
+.contacto-texto {
+    flex: 1;
+}
+
+.contacto-texto h2 {
+    text-align: left;
+}
+
+.contacto-texto p {
+    margin-top: 20px;
+}
+
+form {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+
+    color: #3d2b1f;
+    margin-top: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+
+    background-color: #c7923e;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #a87329;
+}
+
+footer {
+    background-color: #2b211b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h2 {
+    color: #e5b85c;
+
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+
+    .presentacion {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .presentacion-texto h2 {
+        text-align: center;
+    }
+
+    .presentacion-texto p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .presentacion-imagen {
+        width: 100%;
+    }
+
+    .resenas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenido {
+        flex-direction: column;
+    }
+
+    .contacto-texto,
+    form {
+        width: 100%;
+    }
+
+    .contacto-texto h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    .header-contenido h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .presentacion-texto h2 {
+        font-size: 2rem;
+    }
+
+    .producto-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contacto-contenido {
+        gap: 30px;
+    }
+}
