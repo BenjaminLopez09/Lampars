@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampars - Lámparas para Todos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <div class="header-contenido">
+            <h1>Lampars</h1>
+            <p>Lámparas para iluminar todos los espacios de tu casa</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="presentacion">
+            <div class="presentacion-texto">
+                <h2>Iluminá tu espacio</h2>
+
+                <p> En Lampars encontrarás lámparas de pie modernas, elegantes y pensadas para darle un toque especial a cada ambiente de tu hogar.</p>
+
+                <a href="#productos" class="boton">Ver productos</a>
+            </div>
+
+            <div class="presentacion-imagen">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2n3JfUjK8xb1oIInd5zvYKhtJsa3LEqpt4_-NPsFphg&s=10">
+            </div>
+        </section>
+
+        <section id="productos" class="productos">
+            <h2>Nuestros productos</h2>
+            <p class="texto-seccion"> Elegí la lámpara que mejor se adapte a tu estilo.</p>
+
+            <div class="productos-contenedor">
+
+                <article class="producto-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=600&q=80">
+
+                    <div class="producto-info">
+                        <h3>Lámpara Nórdica</h3>
+                        <p> Diseño sencillo y moderno, ideal para salas de estar y dormitorios.</p>
+                        <span class="precio">$85.000</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=80">
+
+                    <div class="producto-info">
+                        <h3>Lámpara Arco</h3>
+                        <p>Una opción buenarda para iluminar espacios amplios con estilo.</p>
+                        <span class="precio">$120.000</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEI9OhF7t9jzUZrIQeILZixrC2GOhqSZRGLYOnPlGlw&s=10">
+
+                    <div class="producto-info">
+                        <h3>Lámpara Clásica</h3>
+                        <p>Un diseño cálido y tradicional para crear ambientes acogedores.</p>
+                        <span class="precio">$70.000</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWlKoPx75wrQsfnfo3VPfNTdYD0npPZX_PABWyDySYg&s=10">
+
+                    <div class="producto-info">
+                        <h3>Lámpara de pie vintage</h3>
+                        <p>Simple y un estilo minimalista para cualquier ambiente.</p>
+                        <span class="precio">$95.000</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="reseñas" class="reseñas">
+
+            <h2>¿Que opinan de nosotros?</h2>
+
+            <div class="reseñas-contenedor">
+
+                <article class="reseña">
+                    <h3>⭐⭐⭐⭐⭐</h3>
+                    <p>"El diseño es hermoso y la calidad excelente ¿Podria ser otra coronacion de gloria?"</p>
+                    <strong>— George Westinghouse</strong>
+                </article>
+
+                <article class="reseña">
+                    <h3>⭐⭐⭐⭐⭐</h3>
+                    <p>"La entrega fue rápida y llegó en perfecto estado."</p>
+                    <strong>Benjamin Franklin</strong>
+                </article>
+
+                <article class="reseña">
+                    <h3>⭐⭐⭐⭐⭐</h3>
+                    <p>"Encontré bastantes opciones, exactamente lo que necesitaba."</p>
+                    <strong>— Nikola Tesla</strong>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+
+            <div class="contacto-contenido">
+
+                <div class="contacto-texto">
+                    <h2>Contactanos</h2>
+
+                    <p>¿Tenés alguna consulta sobre nuestros productos? Completá el formulario y nos pondremos en contacto con vos. Estamos para ofrecer el mejor servicio.</p>
+                </div>
+
+                <form
+                    action="https://formspree.io/f/mbgdrnwj"
+                    method="POST">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta" required></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Lampers</h2>
+        <p> Lámparas para darle luz y estilo a tu hogar.</p>
+    </footer>
+
+</body>
+</html>
